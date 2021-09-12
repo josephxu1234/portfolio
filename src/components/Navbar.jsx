@@ -9,7 +9,7 @@ import { CgFileDocument } from "react-icons/cg";
 
 function Navbar() {
     return (
-        <header className="sticky top-0 z-10 bg-purple-700 bg-opacity-10 text-gray-100 md:text-xl">
+        <header className="sticky top-0 z-10 bg-indigo-900 text-gray-100 md:text-xl">
 
             <nav>
                 <ul className="flex justify-end py-4">
@@ -19,10 +19,16 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className="ml-4 md:ml-12">
-                        <a href="https://github.com/josephxu1234" className="inline-flex items-center gap-x-1">
+                        {/*<a href="https://github.com/josephxu1234" className="inline-flex items-center gap-x-1">
                         <AiOutlineFundProjectionScreen/>
                         Projects
-                        </a>
+    </a>*/}
+
+                        <Link to="/projects">
+                            <h1 className="inline-flex items-center gap-x-1"> 
+                            <AiOutlineFundProjectionScreen/>
+                            Projects </h1>
+                        </Link>
                     </li>
                     <li className="ml-4 md:ml-12">
                         <a href={Resume} target="_blank" className="inline-flex items-center gap-x-1">

@@ -32,6 +32,7 @@ function About() {
         }
     }, [vantaEffect])
     {/*if other pages are to be added, remove absolute top-0 */}
+    {/* add padding-y to adjust for mobile device landscape mode*/}
     return (
         <div ref={myRef} className="flex justify-center items-center h-screen w-full absolute top-0">
             <div className="flex flex-col mx-16 lg:mx-24 2xl:mx-40 text-white">
@@ -54,7 +55,7 @@ function About() {
                         Contact Me
                     </a>
                     <a href="https://github.com/josephxu1234" className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-                        View My Projects
+                        View Github
                     </a>
                 </div>
 
